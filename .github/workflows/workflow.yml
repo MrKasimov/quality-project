@@ -24,3 +24,5 @@ jobs:
         run: ./gradlew jacocoTestReport
       - name: Codecov
         uses: codecov/codecov-action@v3.1.1
+        with:
+          directory: ./build/JacocoReportDir/test

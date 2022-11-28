@@ -21,6 +21,7 @@ tasks.getByName<Test>("test") {
 
 jacoco {
     toolVersion = "0.8.8"
+    reportsDirectory.set(layout.buildDirectory.dir("JacocoReportDir"))
 }
 
 tasks.test {
@@ -29,4 +30,10 @@ tasks.test {
 
 tasks.jacocoTestReport {
     dependsOn(tasks.test)
+}
+
+tasks.jacocoTestReport {
+    reports {
+        xml.required.set(true)
+    }
 }
