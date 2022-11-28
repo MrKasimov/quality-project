@@ -26,3 +26,5 @@ jobs:
         uses: codecov/codecov-action@v3.1.1
         with:
           directory: ./build/JacocoReportDir/test
+      - name: Coverage rule check
+        run: ./gradlew jacocoTestCoverageVerification
