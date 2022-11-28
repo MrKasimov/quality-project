@@ -19,7 +19,7 @@ public class MathOperationsJUnit4Test {
         System.out.println("\n ----- JUnit4 SUBSTRACT is running ----- \n");
 
         MathOperationsJUnit4 mathOperations = new MathOperationsJUnit4();
-        int expected = 77;
+        int expected = 67;
         int actual = mathOperations.substractJ4(100, 33);
         assertEquals(expected, actual);
     }

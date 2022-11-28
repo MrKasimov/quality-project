@@ -11,7 +11,7 @@ class MathOperationsJUnit5Test {
         System.out.println("\n ----- JUnit5 ADD is running ----- \n");
 
         MathOperationsJUnit5 mathOperations = new MathOperationsJUnit5();
-        int expected = 5;
+        int expected = 4;
         int actual = mathOperations.addJ5(2, 2);
         assertEquals(expected, actual);
     }
