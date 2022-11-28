@@ -37,3 +37,14 @@ tasks.jacocoTestReport {
         xml.required.set(true)
     }
 }
+
+tasks.jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            isEnabled = true
+            limit {
+                minimum = "0.4".toBigDecimal()
+            }
+        }
+    }
+}
